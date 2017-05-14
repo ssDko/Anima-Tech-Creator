@@ -1,0 +1,5 @@
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Test\bin\Debug\Test.dll
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Test\bin\Debug\Test.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Test\obj\Debug\Test.dll
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Test\obj\Debug\Test.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Test\obj\Debug\EffectLibrary.csprojResolveAssemblyReference.cache

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anima Tech Creator", "Anima Tech Creator\Anima Tech Creator.csproj", "{A38CF4FB-D70D-436A-9ECC-AD6EA17FD34F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBed", "TestBed\TestBed.csproj", "{0765603B-A498-4869-9F47-33278830AA7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EffectLibrary", "Test\EffectLibrary.csproj", "{1020025A-5D8F-4BAE-A598-1EEEDC37B50F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A38CF4FB-D70D-436A-9ECC-AD6EA17FD34F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38CF4FB-D70D-436A-9ECC-AD6EA17FD34F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38CF4FB-D70D-436A-9ECC-AD6EA17FD34F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38CF4FB-D70D-436A-9ECC-AD6EA17FD34F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0765603B-A498-4869-9F47-33278830AA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0765603B-A498-4869-9F47-33278830AA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0765603B-A498-4869-9F47-33278830AA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0765603B-A498-4869-9F47-33278830AA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1020025A-5D8F-4BAE-A598-1EEEDC37B50F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1020025A-5D8F-4BAE-A598-1EEEDC37B50F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1020025A-5D8F-4BAE-A598-1EEEDC37B50F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1020025A-5D8F-4BAE-A598-1EEEDC37B50F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

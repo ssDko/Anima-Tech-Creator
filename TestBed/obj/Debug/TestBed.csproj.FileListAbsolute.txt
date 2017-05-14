@@ -1,0 +1,8 @@
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\bin\Debug\TestBed.exe.config
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\bin\Debug\TestBed.exe
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\bin\Debug\TestBed.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\bin\Debug\Test.dll
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\bin\Debug\Test.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\obj\Debug\TestBed.csprojResolveAssemblyReference.cache
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\obj\Debug\TestBed.exe
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\TestBed\obj\Debug\TestBed.pdb

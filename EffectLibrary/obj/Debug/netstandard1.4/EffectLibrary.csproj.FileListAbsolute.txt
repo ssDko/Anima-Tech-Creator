@@ -1,0 +1,7 @@
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\EffectLibrary\bin\Debug\netstandard1.4\EffectLibrary.deps.json
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\EffectLibrary\bin\Debug\netstandard1.4\EffectLibrary.dll
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\EffectLibrary\bin\Debug\netstandard1.4\EffectLibrary.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\EffectLibrary\obj\Debug\netstandard1.4\EffectLibrary.AssemblyInfo.cs
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\EffectLibrary\obj\Debug\netstandard1.4\EffectLibrary.dll
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\EffectLibrary\obj\Debug\netstandard1.4\EffectLibrary.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\EffectLibrary\obj\Debug\netstandard1.4\EffectLibrary.csprojResolveAssemblyReference.cache

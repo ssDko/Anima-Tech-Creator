@@ -1,0 +1,13 @@
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\bin\Debug\Anima Tech Creator.exe.config
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\bin\Debug\Anima Tech Creator.exe
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\bin\Debug\Anima Tech Creator.pdb
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima Tech Creator.csprojResolveAssemblyReference.cache
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.Properties.Resources.resources
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima Tech Creator.csproj.GenerateResource.Cache
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima Tech Creator.exe
+c:\users\jesse\documents\visual studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima Tech Creator.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\bin\Debug\Test.dll
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\bin\Debug\Test.pdb
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.formModifyAdvantage.resources
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.Tech_Creator.resources
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.formEffect_Creator.resources
