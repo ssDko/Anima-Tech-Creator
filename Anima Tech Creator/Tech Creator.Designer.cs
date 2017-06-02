@@ -31,6 +31,7 @@
             this.txtBoxEffectFilePath = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLoad = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.cBoxEffectList = new System.Windows.Forms.ComboBox();
             this.txtBoxStrOptionalCost = new System.Windows.Forms.TextBox();
             this.txtBoxPowOptionalCost = new System.Windows.Forms.TextBox();
@@ -56,18 +57,24 @@
             this.lblConTotal = new System.Windows.Forms.Label();
             this.lblWPTotal = new System.Windows.Forms.Label();
             this.lblPowTotal = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cmbBoxEffectBonuses = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.numUDPowerLevel = new System.Windows.Forms.NumericUpDown();
-            this.cBoxIsSecondary = new System.Windows.Forms.CheckBox();
-            this.txtBoxEffectBonus = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.grpBoxSecondaryEffects = new System.Windows.Forms.GroupBox();
+            this.panelSecondaryEffects = new System.Windows.Forms.Panel();
+            this.btnAddSecondaryEffect = new System.Windows.Forms.Button();
+            this.panelPrimaryEffect = new System.Windows.Forms.Panel();
+            this.lblGrandTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numUDStr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDAgi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDDex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDCon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDWP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDPow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDPowerLevel)).BeginInit();
+            this.grpBoxSecondaryEffects.SuspendLayout();
+            this.panelPrimaryEffect.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtBoxEffectFilePath
@@ -90,7 +97,7 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(386, 23);
+            this.btnLoad.Location = new System.Drawing.Point(398, 25);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(75, 23);
             this.btnLoad.TabIndex = 2;
@@ -98,11 +105,20 @@
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(90, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 13);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "Primary Effect";
+            // 
             // cBoxEffectList
             // 
             this.cBoxEffectList.Enabled = false;
             this.cBoxEffectList.FormattingEnabled = true;
-            this.cBoxEffectList.Location = new System.Drawing.Point(13, 51);
+            this.cBoxEffectList.Location = new System.Drawing.Point(89, 81);
             this.cBoxEffectList.Name = "cBoxEffectList";
             this.cBoxEffectList.Size = new System.Drawing.Size(265, 21);
             this.cBoxEffectList.TabIndex = 3;
@@ -111,7 +127,7 @@
             // txtBoxStrOptionalCost
             // 
             this.txtBoxStrOptionalCost.Enabled = false;
-            this.txtBoxStrOptionalCost.Location = new System.Drawing.Point(15, 158);
+            this.txtBoxStrOptionalCost.Location = new System.Drawing.Point(6, 32);
             this.txtBoxStrOptionalCost.Name = "txtBoxStrOptionalCost";
             this.txtBoxStrOptionalCost.Size = new System.Drawing.Size(31, 20);
             this.txtBoxStrOptionalCost.TabIndex = 4;
@@ -119,7 +135,7 @@
             // txtBoxPowOptionalCost
             // 
             this.txtBoxPowOptionalCost.Enabled = false;
-            this.txtBoxPowOptionalCost.Location = new System.Drawing.Point(200, 158);
+            this.txtBoxPowOptionalCost.Location = new System.Drawing.Point(191, 32);
             this.txtBoxPowOptionalCost.Name = "txtBoxPowOptionalCost";
             this.txtBoxPowOptionalCost.Size = new System.Drawing.Size(31, 20);
             this.txtBoxPowOptionalCost.TabIndex = 5;
@@ -127,7 +143,7 @@
             // txtBoxWPOptionalCost
             // 
             this.txtBoxWPOptionalCost.Enabled = false;
-            this.txtBoxWPOptionalCost.Location = new System.Drawing.Point(163, 158);
+            this.txtBoxWPOptionalCost.Location = new System.Drawing.Point(154, 32);
             this.txtBoxWPOptionalCost.Name = "txtBoxWPOptionalCost";
             this.txtBoxWPOptionalCost.Size = new System.Drawing.Size(31, 20);
             this.txtBoxWPOptionalCost.TabIndex = 6;
@@ -135,7 +151,7 @@
             // txtBoxConOptionalCost
             // 
             this.txtBoxConOptionalCost.Enabled = false;
-            this.txtBoxConOptionalCost.Location = new System.Drawing.Point(126, 158);
+            this.txtBoxConOptionalCost.Location = new System.Drawing.Point(117, 32);
             this.txtBoxConOptionalCost.Name = "txtBoxConOptionalCost";
             this.txtBoxConOptionalCost.Size = new System.Drawing.Size(31, 20);
             this.txtBoxConOptionalCost.TabIndex = 7;
@@ -143,7 +159,7 @@
             // txtBoxDexOptionalCost
             // 
             this.txtBoxDexOptionalCost.Enabled = false;
-            this.txtBoxDexOptionalCost.Location = new System.Drawing.Point(89, 158);
+            this.txtBoxDexOptionalCost.Location = new System.Drawing.Point(80, 32);
             this.txtBoxDexOptionalCost.Name = "txtBoxDexOptionalCost";
             this.txtBoxDexOptionalCost.Size = new System.Drawing.Size(31, 20);
             this.txtBoxDexOptionalCost.TabIndex = 8;
@@ -151,7 +167,7 @@
             // txtBoxAgiOptionalCost
             // 
             this.txtBoxAgiOptionalCost.Enabled = false;
-            this.txtBoxAgiOptionalCost.Location = new System.Drawing.Point(52, 158);
+            this.txtBoxAgiOptionalCost.Location = new System.Drawing.Point(43, 32);
             this.txtBoxAgiOptionalCost.Name = "txtBoxAgiOptionalCost";
             this.txtBoxAgiOptionalCost.Size = new System.Drawing.Size(31, 20);
             this.txtBoxAgiOptionalCost.TabIndex = 9;
@@ -159,7 +175,7 @@
             // lblStr
             // 
             this.lblStr.AutoSize = true;
-            this.lblStr.Location = new System.Drawing.Point(14, 142);
+            this.lblStr.Location = new System.Drawing.Point(111, 148);
             this.lblStr.Name = "lblStr";
             this.lblStr.Size = new System.Drawing.Size(20, 13);
             this.lblStr.TabIndex = 10;
@@ -168,7 +184,7 @@
             // lblAgi
             // 
             this.lblAgi.AutoSize = true;
-            this.lblAgi.Location = new System.Drawing.Point(52, 142);
+            this.lblAgi.Location = new System.Drawing.Point(149, 148);
             this.lblAgi.Name = "lblAgi";
             this.lblAgi.Size = new System.Drawing.Size(22, 13);
             this.lblAgi.TabIndex = 11;
@@ -177,7 +193,7 @@
             // lblDex
             // 
             this.lblDex.AutoSize = true;
-            this.lblDex.Location = new System.Drawing.Point(86, 142);
+            this.lblDex.Location = new System.Drawing.Point(183, 148);
             this.lblDex.Name = "lblDex";
             this.lblDex.Size = new System.Drawing.Size(26, 13);
             this.lblDex.TabIndex = 12;
@@ -186,7 +202,7 @@
             // lblCon
             // 
             this.lblCon.AutoSize = true;
-            this.lblCon.Location = new System.Drawing.Point(123, 142);
+            this.lblCon.Location = new System.Drawing.Point(220, 148);
             this.lblCon.Name = "lblCon";
             this.lblCon.Size = new System.Drawing.Size(26, 13);
             this.lblCon.TabIndex = 13;
@@ -195,7 +211,7 @@
             // lblWP
             // 
             this.lblWP.AutoSize = true;
-            this.lblWP.Location = new System.Drawing.Point(160, 142);
+            this.lblWP.Location = new System.Drawing.Point(257, 148);
             this.lblWP.Name = "lblWP";
             this.lblWP.Size = new System.Drawing.Size(25, 13);
             this.lblWP.TabIndex = 14;
@@ -204,7 +220,7 @@
             // lblPow
             // 
             this.lblPow.AutoSize = true;
-            this.lblPow.Location = new System.Drawing.Point(197, 142);
+            this.lblPow.Location = new System.Drawing.Point(294, 148);
             this.lblPow.Name = "lblPow";
             this.lblPow.Size = new System.Drawing.Size(28, 13);
             this.lblPow.TabIndex = 15;
@@ -213,7 +229,7 @@
             // numUDStr
             // 
             this.numUDStr.Enabled = false;
-            this.numUDStr.Location = new System.Drawing.Point(15, 185);
+            this.numUDStr.Location = new System.Drawing.Point(5, 6);
             this.numUDStr.Name = "numUDStr";
             this.numUDStr.Size = new System.Drawing.Size(31, 20);
             this.numUDStr.TabIndex = 16;
@@ -222,7 +238,7 @@
             // numUDAgi
             // 
             this.numUDAgi.Enabled = false;
-            this.numUDAgi.Location = new System.Drawing.Point(53, 185);
+            this.numUDAgi.Location = new System.Drawing.Point(43, 6);
             this.numUDAgi.Name = "numUDAgi";
             this.numUDAgi.Size = new System.Drawing.Size(30, 20);
             this.numUDAgi.TabIndex = 17;
@@ -231,7 +247,7 @@
             // numUDDex
             // 
             this.numUDDex.Enabled = false;
-            this.numUDDex.Location = new System.Drawing.Point(89, 185);
+            this.numUDDex.Location = new System.Drawing.Point(79, 6);
             this.numUDDex.Name = "numUDDex";
             this.numUDDex.Size = new System.Drawing.Size(31, 20);
             this.numUDDex.TabIndex = 18;
@@ -240,7 +256,7 @@
             // numUDCon
             // 
             this.numUDCon.Enabled = false;
-            this.numUDCon.Location = new System.Drawing.Point(127, 185);
+            this.numUDCon.Location = new System.Drawing.Point(117, 6);
             this.numUDCon.Name = "numUDCon";
             this.numUDCon.Size = new System.Drawing.Size(30, 20);
             this.numUDCon.TabIndex = 19;
@@ -249,7 +265,7 @@
             // numUDWP
             // 
             this.numUDWP.Enabled = false;
-            this.numUDWP.Location = new System.Drawing.Point(163, 185);
+            this.numUDWP.Location = new System.Drawing.Point(153, 6);
             this.numUDWP.Name = "numUDWP";
             this.numUDWP.Size = new System.Drawing.Size(31, 20);
             this.numUDWP.TabIndex = 20;
@@ -258,7 +274,7 @@
             // numUDPow
             // 
             this.numUDPow.Enabled = false;
-            this.numUDPow.Location = new System.Drawing.Point(200, 185);
+            this.numUDPow.Location = new System.Drawing.Point(190, 6);
             this.numUDPow.Name = "numUDPow";
             this.numUDPow.Size = new System.Drawing.Size(31, 20);
             this.numUDPow.TabIndex = 21;
@@ -267,7 +283,7 @@
             // lblStrTotal
             // 
             this.lblStrTotal.AutoSize = true;
-            this.lblStrTotal.Location = new System.Drawing.Point(21, 208);
+            this.lblStrTotal.Location = new System.Drawing.Point(15, 56);
             this.lblStrTotal.Name = "lblStrTotal";
             this.lblStrTotal.Size = new System.Drawing.Size(13, 13);
             this.lblStrTotal.TabIndex = 22;
@@ -276,7 +292,7 @@
             // lblAgiTotal
             // 
             this.lblAgiTotal.AutoSize = true;
-            this.lblAgiTotal.Location = new System.Drawing.Point(61, 208);
+            this.lblAgiTotal.Location = new System.Drawing.Point(52, 56);
             this.lblAgiTotal.Name = "lblAgiTotal";
             this.lblAgiTotal.Size = new System.Drawing.Size(13, 13);
             this.lblAgiTotal.TabIndex = 23;
@@ -285,7 +301,7 @@
             // lblDexTotal
             // 
             this.lblDexTotal.AutoSize = true;
-            this.lblDexTotal.Location = new System.Drawing.Point(99, 208);
+            this.lblDexTotal.Location = new System.Drawing.Point(89, 56);
             this.lblDexTotal.Name = "lblDexTotal";
             this.lblDexTotal.Size = new System.Drawing.Size(13, 13);
             this.lblDexTotal.TabIndex = 24;
@@ -294,7 +310,7 @@
             // lblConTotal
             // 
             this.lblConTotal.AutoSize = true;
-            this.lblConTotal.Location = new System.Drawing.Point(136, 208);
+            this.lblConTotal.Location = new System.Drawing.Point(126, 56);
             this.lblConTotal.Name = "lblConTotal";
             this.lblConTotal.Size = new System.Drawing.Size(13, 13);
             this.lblConTotal.TabIndex = 25;
@@ -303,7 +319,7 @@
             // lblWPTotal
             // 
             this.lblWPTotal.AutoSize = true;
-            this.lblWPTotal.Location = new System.Drawing.Point(172, 208);
+            this.lblWPTotal.Location = new System.Drawing.Point(163, 56);
             this.lblWPTotal.Name = "lblWPTotal";
             this.lblWPTotal.Size = new System.Drawing.Size(13, 13);
             this.lblWPTotal.TabIndex = 26;
@@ -312,107 +328,146 @@
             // lblPowTotal
             // 
             this.lblPowTotal.AutoSize = true;
-            this.lblPowTotal.Location = new System.Drawing.Point(212, 208);
+            this.lblPowTotal.Location = new System.Drawing.Point(200, 56);
             this.lblPowTotal.Name = "lblPowTotal";
             this.lblPowTotal.Size = new System.Drawing.Size(13, 13);
             this.lblPowTotal.TabIndex = 27;
             this.lblPowTotal.Text = "0";
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.TabIndex = 40;
+            // 
+            // cmbBoxEffectBonuses
+            // 
+            this.cmbBoxEffectBonuses.Enabled = false;
+            this.cmbBoxEffectBonuses.FormattingEnabled = true;
+            this.cmbBoxEffectBonuses.Location = new System.Drawing.Point(179, 113);
+            this.cmbBoxEffectBonuses.Name = "cmbBoxEffectBonuses";
+            this.cmbBoxEffectBonuses.Size = new System.Drawing.Size(121, 21);
+            this.cmbBoxEffectBonuses.TabIndex = 31;
+            this.cmbBoxEffectBonuses.SelectedIndexChanged += new System.EventHandler(this.cmbBoxEffectBonuses_SelectedIndexChanged);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(124, 104);
+            this.label2.Location = new System.Drawing.Point(58, 222);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Power Level";
-            // 
-            // numUDPowerLevel
-            // 
-            this.numUDPowerLevel.Enabled = false;
-            this.numUDPowerLevel.Location = new System.Drawing.Point(127, 120);
-            this.numUDPowerLevel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numUDPowerLevel.Name = "numUDPowerLevel";
-            this.numUDPowerLevel.Size = new System.Drawing.Size(33, 20);
-            this.numUDPowerLevel.TabIndex = 29;
-            this.numUDPowerLevel.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numUDPowerLevel.ValueChanged += new System.EventHandler(this.numUDPowerLevel_ValueChanged);
-            // 
-            // cBoxIsSecondary
-            // 
-            this.cBoxIsSecondary.AutoSize = true;
-            this.cBoxIsSecondary.Enabled = false;
-            this.cBoxIsSecondary.Location = new System.Drawing.Point(210, 120);
-            this.cBoxIsSecondary.Name = "cBoxIsSecondary";
-            this.cBoxIsSecondary.Size = new System.Drawing.Size(114, 17);
-            this.cBoxIsSecondary.TabIndex = 30;
-            this.cBoxIsSecondary.Text = "Secondary Effect?";
-            this.cBoxIsSecondary.UseVisualStyleBackColor = true;
-            this.cBoxIsSecondary.CheckedChanged += new System.EventHandler(this.cBoxIsSecondary_CheckedChanged);
-            // 
-            // txtBoxEffectBonus
-            // 
-            this.txtBoxEffectBonus.Enabled = false;
-            this.txtBoxEffectBonus.Location = new System.Drawing.Point(15, 119);
-            this.txtBoxEffectBonus.Name = "txtBoxEffectBonus";
-            this.txtBoxEffectBonus.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxEffectBonus.TabIndex = 31;
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Total:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 104);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(12, 201);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Bonus";
+            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "*Additioanl Cost:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(138, 116);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "Bonus";
+            // 
+            // grpBoxSecondaryEffects
+            // 
+            this.grpBoxSecondaryEffects.Controls.Add(this.panelSecondaryEffects);
+            this.grpBoxSecondaryEffects.Location = new System.Drawing.Point(12, 243);
+            this.grpBoxSecondaryEffects.Name = "grpBoxSecondaryEffects";
+            this.grpBoxSecondaryEffects.Size = new System.Drawing.Size(380, 357);
+            this.grpBoxSecondaryEffects.TabIndex = 37;
+            this.grpBoxSecondaryEffects.TabStop = false;
+            this.grpBoxSecondaryEffects.Text = "Secondary Effects";
+            // 
+            // panelSecondaryEffects
+            // 
+            this.panelSecondaryEffects.AutoScroll = true;
+            this.panelSecondaryEffects.Location = new System.Drawing.Point(7, 20);
+            this.panelSecondaryEffects.Name = "panelSecondaryEffects";
+            this.panelSecondaryEffects.Size = new System.Drawing.Size(367, 329);
+            this.panelSecondaryEffects.TabIndex = 0;
+            this.panelSecondaryEffects.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.panelSecondaryEffects_ControlRemoved);
+            // 
+            // btnAddSecondaryEffect
+            // 
+            this.btnAddSecondaryEffect.Enabled = false;
+            this.btnAddSecondaryEffect.Location = new System.Drawing.Point(398, 263);
+            this.btnAddSecondaryEffect.Name = "btnAddSecondaryEffect";
+            this.btnAddSecondaryEffect.Size = new System.Drawing.Size(75, 23);
+            this.btnAddSecondaryEffect.TabIndex = 38;
+            this.btnAddSecondaryEffect.Text = "Add";
+            this.btnAddSecondaryEffect.UseVisualStyleBackColor = true;
+            this.btnAddSecondaryEffect.Click += new System.EventHandler(this.btnAddSecondaryEffect_Click);
+            // 
+            // panelPrimaryEffect
+            // 
+            this.panelPrimaryEffect.Controls.Add(this.txtBoxStrOptionalCost);
+            this.panelPrimaryEffect.Controls.Add(this.txtBoxPowOptionalCost);
+            this.panelPrimaryEffect.Controls.Add(this.txtBoxWPOptionalCost);
+            this.panelPrimaryEffect.Controls.Add(this.txtBoxConOptionalCost);
+            this.panelPrimaryEffect.Controls.Add(this.txtBoxDexOptionalCost);
+            this.panelPrimaryEffect.Controls.Add(this.txtBoxAgiOptionalCost);
+            this.panelPrimaryEffect.Controls.Add(this.lblPowTotal);
+            this.panelPrimaryEffect.Controls.Add(this.lblWPTotal);
+            this.panelPrimaryEffect.Controls.Add(this.lblConTotal);
+            this.panelPrimaryEffect.Controls.Add(this.lblDexTotal);
+            this.panelPrimaryEffect.Controls.Add(this.lblAgiTotal);
+            this.panelPrimaryEffect.Controls.Add(this.numUDStr);
+            this.panelPrimaryEffect.Controls.Add(this.lblStrTotal);
+            this.panelPrimaryEffect.Controls.Add(this.numUDAgi);
+            this.panelPrimaryEffect.Controls.Add(this.numUDPow);
+            this.panelPrimaryEffect.Controls.Add(this.numUDDex);
+            this.panelPrimaryEffect.Controls.Add(this.numUDWP);
+            this.panelPrimaryEffect.Controls.Add(this.numUDCon);
+            this.panelPrimaryEffect.Location = new System.Drawing.Point(102, 166);
+            this.panelPrimaryEffect.Name = "panelPrimaryEffect";
+            this.panelPrimaryEffect.Size = new System.Drawing.Size(228, 71);
+            this.panelPrimaryEffect.TabIndex = 39;
+            // 
+            // lblGrandTotal
+            // 
+            this.lblGrandTotal.AutoSize = true;
+            this.lblGrandTotal.Location = new System.Drawing.Point(12, 607);
+            this.lblGrandTotal.Name = "lblGrandTotal";
+            this.lblGrandTotal.Size = new System.Drawing.Size(276, 13);
+            this.lblGrandTotal.TabIndex = 41;
+            this.lblGrandTotal.Text = "Grand Total: Str: 0, Agi: 0, Dex: 0, Con: 0, WP: 0, Pow: 0";
             // 
             // Tech_Creator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 418);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtBoxEffectBonus);
-            this.Controls.Add(this.cBoxIsSecondary);
-            this.Controls.Add(this.numUDPowerLevel);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblPowTotal);
-            this.Controls.Add(this.lblWPTotal);
-            this.Controls.Add(this.lblConTotal);
-            this.Controls.Add(this.lblDexTotal);
-            this.Controls.Add(this.lblAgiTotal);
-            this.Controls.Add(this.lblStrTotal);
-            this.Controls.Add(this.numUDPow);
-            this.Controls.Add(this.numUDWP);
-            this.Controls.Add(this.numUDCon);
-            this.Controls.Add(this.numUDDex);
-            this.Controls.Add(this.numUDAgi);
-            this.Controls.Add(this.numUDStr);
-            this.Controls.Add(this.lblPow);
-            this.Controls.Add(this.lblWP);
-            this.Controls.Add(this.lblCon);
-            this.Controls.Add(this.lblDex);
+            this.ClientSize = new System.Drawing.Size(492, 642);
+            this.Controls.Add(this.lblGrandTotal);
             this.Controls.Add(this.lblAgi);
-            this.Controls.Add(this.lblStr);
-            this.Controls.Add(this.txtBoxAgiOptionalCost);
-            this.Controls.Add(this.txtBoxDexOptionalCost);
-            this.Controls.Add(this.txtBoxConOptionalCost);
-            this.Controls.Add(this.txtBoxWPOptionalCost);
-            this.Controls.Add(this.txtBoxPowOptionalCost);
-            this.Controls.Add(this.txtBoxStrOptionalCost);
+            this.Controls.Add(this.panelPrimaryEffect);
             this.Controls.Add(this.cBoxEffectList);
+            this.Controls.Add(this.btnAddSecondaryEffect);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.grpBoxSecondaryEffects);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblStr);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblDex);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCon);
             this.Controls.Add(this.txtBoxEffectFilePath);
+            this.Controls.Add(this.cmbBoxEffectBonuses);
+            this.Controls.Add(this.lblWP);
+            this.Controls.Add(this.lblPow);
             this.Name = "Tech_Creator";
             this.Text = "Tech_Creator";
             this.Load += new System.EventHandler(this.Tech_Creator_Load);
@@ -422,7 +477,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numUDCon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDWP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numUDPow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUDPowerLevel)).EndInit();
+            this.grpBoxSecondaryEffects.ResumeLayout(false);
+            this.panelPrimaryEffect.ResumeLayout(false);
+            this.panelPrimaryEffect.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -433,6 +490,7 @@
         private System.Windows.Forms.TextBox txtBoxEffectFilePath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cBoxEffectList;
         private System.Windows.Forms.TextBox txtBoxStrOptionalCost;
         private System.Windows.Forms.TextBox txtBoxPowOptionalCost;
@@ -458,10 +516,15 @@
         private System.Windows.Forms.Label lblConTotal;
         private System.Windows.Forms.Label lblWPTotal;
         private System.Windows.Forms.Label lblPowTotal;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbBoxEffectBonuses;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numUDPowerLevel;
-        private System.Windows.Forms.CheckBox cBoxIsSecondary;
-        private System.Windows.Forms.TextBox txtBoxEffectBonus;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox grpBoxSecondaryEffects;
+        private System.Windows.Forms.Button btnAddSecondaryEffect;
+        private System.Windows.Forms.Panel panelSecondaryEffects;
+        private System.Windows.Forms.Panel panelPrimaryEffect;
+        private System.Windows.Forms.Label lblGrandTotal;
     }
 }

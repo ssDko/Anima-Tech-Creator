@@ -11,3 +11,4 @@ C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Te
 C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.formModifyAdvantage.resources
 C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.Tech_Creator.resources
 C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.formEffect_Creator.resources
+C:\Users\Jesse\Documents\Visual Studio 2017\Projects\Anima Tech Creator\Anima Tech Creator\obj\Debug\Anima_Tech_Creator.SecondaryEffect.resources

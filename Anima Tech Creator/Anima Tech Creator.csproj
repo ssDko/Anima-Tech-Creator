@@ -75,6 +75,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondaryEffect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SecondaryEffect.Designer.cs">
+      <DependentUpon>SecondaryEffect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondaryEffectEventArgs.cs" />
     <Compile Include="Tech Creator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +103,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SecondaryEffect.resx">
+      <DependentUpon>SecondaryEffect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tech Creator.resx">
       <DependentUpon>Tech Creator.cs</DependentUpon>
     </EmbeddedResource>

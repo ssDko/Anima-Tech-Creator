@@ -17,6 +17,7 @@ namespace Anima_Tech_Creator
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Tech_Creator());
+           // Application.Run(new formEffect_Creator());
             
         }
     }
