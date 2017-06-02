@@ -11,14 +11,9 @@ namespace EffectLibrary
         private String name = "";
         private List<EffectStatLine> effectStats;
         private Characteristic primaryCharacteristic = Characteristic.Strength;
-        
+
         //optional characteristic costs; 
-        private int optionalStrCost = 0;
-        private int optionalAgiCost = 0;
-        private int optionalDexCost = 0;
-        private int optionalConCost = 0;
-        private int optionalWPCost  = 0;
-        private int optionalPowCost = 0;
+        private Dictionary<Characteristic, int> optionalStatCosts;
 
         //Elements
         private bool air = false;
@@ -40,48 +35,63 @@ namespace EffectLibrary
         [DataMember(Order = 2)]
         public Characteristic PrimaryCharacteristic { get => primaryCharacteristic; set => primaryCharacteristic = value; }
         [DataMember(Order = 3)]
-        public int OptionalStrCost { get => optionalStrCost; set => optionalStrCost = value; }
+        public Dictionary<Characteristic, int> OptionalStatCosts { get => optionalStatCosts; set => optionalStatCosts = value; }
         [DataMember(Order = 4)]
-        public int OptionalAgiCost { get => optionalAgiCost; set => optionalAgiCost = value; }
-        [DataMember(Order = 5)]
-        public int OptionalDexCost { get => optionalDexCost; set => optionalDexCost = value; }
-        [DataMember(Order = 6)]
-        public int OptionalConCost { get => optionalConCost; set => optionalConCost = value; }
-        [DataMember(Order = 7)]
-        public int OptionalWPCost { get => optionalWPCost; set => optionalWPCost = value; }
-        [DataMember(Order = 8)]
-        public int OptionalPowCost { get => optionalPowCost; set => optionalPowCost = value; }
-        [DataMember(Order = 9)]
         public Frequency Frequency { get => frequency; set => frequency = value; }
-        [DataMember(Order = 10)]
+        [DataMember(Order = 5)]
         public ActionType ActionType { get => actionType; set => actionType = value; }
-        [DataMember(Order = 11, EmitDefaultValue = false)]
+        [DataMember(Order = 6, EmitDefaultValue = false)]
         public List<EffectStatLine> EffectStats { get => effectStats; set => effectStats = value; }
-        [DataMember(Order = 12, EmitDefaultValue = false)]
+        [DataMember(Order = 7, EmitDefaultValue = false)]
         public List<OptionalAdvantage> OptionalAdvantages { get => optionalAdvantages; set => optionalAdvantages = value; }
-        [DataMember(Order = 13, EmitDefaultValue = false)]
+        [DataMember(Order = 8, EmitDefaultValue = false)]
         public List<EffectDisadvantage> OptionalDisadvantages { get => optionalDisadvantages; set => optionalDisadvantages = value; }
-        [DataMember(Order = 14)]
+        [DataMember(Order = 9)]
         public bool Air { get => air; set => air = value; }
-        [DataMember(Order = 15)]
+        [DataMember(Order = 10)]
         public bool Earth { get => earth; set => earth = value; }
-        [DataMember(Order = 16)]
+        [DataMember(Order = 11)]
         public bool Fire { get => fire; set => fire = value; }
-        [DataMember(Order = 17)]
+        [DataMember(Order = 12)]
         public bool Water { get => water; set => water = value; }
-        [DataMember(Order = 18)]
+        [DataMember(Order = 13)]
         public bool Light { get => light; set => light = value; }
-        [DataMember(Order = 19)]
+        [DataMember(Order = 14)]
         public bool Darkness { get => darkness; set => darkness = value; }
+        
 
         // Constructor(s)
         public Effect()
         {
-            effectStats = new List<EffectStatLine>();           
-            
-            optionalAdvantages = new List<OptionalAdvantage>();
-            optionalDisadvantages = new List<EffectDisadvantage>();
+            EffectStats = new List<EffectStatLine>();
+            OptionalStatCosts = new Dictionary<Characteristic, int>();
+            OptionalStatCosts.Add(Characteristic.Strength, 0);
+            OptionalStatCosts.Add(Characteristic.Agility, 0);
+            OptionalStatCosts.Add(Characteristic.Dexterity, 0);
+            OptionalStatCosts.Add(Characteristic.Constitution, 0);
+            OptionalStatCosts.Add(Characteristic.WillPower, 0);
+            OptionalStatCosts.Add(Characteristic.Power, 0);
+            OptionalAdvantages = new List<OptionalAdvantage>();
+            OptionalDisadvantages = new List<EffectDisadvantage>();
         }
+
+        public Effect(Effect origional) : this()
+        {
+            this.Name = origional.Name;
+            this.EffectStats = new List<EffectStatLine>(origional.EffectStats);
+            this.PrimaryCharacteristic = origional.PrimaryCharacteristic;
+            this.OptionalStatCosts = new Dictionary<Characteristic, int>(origional.OptionalStatCosts);
+            this.Air = origional.Air;
+            this.Earth = origional.Earth;
+            this.Fire = origional.Fire;
+            this.Water = origional.Water;
+            this.Light = origional.Light;
+            this.Darkness = origional.Darkness;
+            this.Frequency = origional.Frequency;
+            this.ActionType = origional.ActionType;
+            this.OptionalAdvantages = new List<OptionalAdvantage>(origional.OptionalAdvantages);
+            this.OptionalDisadvantages = new List<EffectDisadvantage>(origional.OptionalDisadvantages);
+    }
 
 
         //methods
@@ -92,7 +102,7 @@ namespace EffectLibrary
         /// <returns>Returns true if the stat line has been added successfully. Otherwise false.</returns>
         public bool AddStatLine(EffectStatLine newLine)
         {
-            effectStats.Add(newLine);           
+            EffectStats.Add(newLine);           
 
 
             return false;
@@ -107,7 +117,7 @@ namespace EffectLibrary
         {
             try
             {
-                effectStats.RemoveAt(index);
+                EffectStats.RemoveAt(index);
             }
             catch (System.IndexOutOfRangeException)
             {
@@ -124,7 +134,7 @@ namespace EffectLibrary
         /// <returns>Returns true if the stat line was removed, false otherwise.</returns>
         public bool RemoveStatLine(EffectStatLine statLine)
         {
-            return effectStats.Remove(statLine);
+            return EffectStats.Remove(statLine);
         }
 
         /// <summary>
@@ -133,14 +143,14 @@ namespace EffectLibrary
         /// <param name="newAdvantage">The advantage to add</param>
         public void AddAdvantage(OptionalAdvantage newAdvantage)
         {
-            optionalAdvantages.Add(newAdvantage);            
+            OptionalAdvantages.Add(newAdvantage);            
         }
 
         public bool RemoveAdvantageAt(int index)
         {
             try
             {
-                optionalAdvantages.RemoveAt(index);
+                OptionalAdvantages.RemoveAt(index);
             }
             catch (System.IndexOutOfRangeException)
             {
@@ -152,19 +162,19 @@ namespace EffectLibrary
 
         public bool RemoveAdvantage(OptionalAdvantage advantage)
         {
-            return optionalAdvantages.Remove(advantage);
+            return OptionalAdvantages.Remove(advantage);
         }
 
         public void AddDisadvantage(EffectDisadvantage newDisadvantage)
         {
-            optionalDisadvantages.Add(newDisadvantage);
+            OptionalDisadvantages.Add(newDisadvantage);
         }
 
         public bool RemoveDisadvantageAt(int index)
         {
             try
             {
-                optionalDisadvantages.RemoveAt(index);
+                OptionalDisadvantages.RemoveAt(index);
             }
             catch (System.IndexOutOfRangeException)
             {
@@ -176,34 +186,7 @@ namespace EffectLibrary
 
         public bool RemoveDisadvantage(EffectDisadvantage disadvantage)
         {
-            return optionalDisadvantages.Remove(disadvantage);
-        }
-
-        public int GetOptionalStat(Characteristic stat)
-        {
-            switch (stat)
-            {
-                case Characteristic.Strength:
-                    return OptionalStrCost;
-                    break;
-                case Characteristic.Agility:
-                    return OptionalAgiCost;
-                    break;
-                case Characteristic.Dexterity:
-                    return OptionalDexCost;
-                    break;
-                case Characteristic.Constitution:
-                    return OptionalConCost;
-                    break;
-                case Characteristic.WillPower:
-                    return OptionalWPCost;
-                    break;
-                case Characteristic.Power:
-                    return OptionalPowCost;
-                    break;
-                default:
-                    return -1;
-            }
-        }
+            return OptionalDisadvantages.Remove(disadvantage);
+        }        
     }
 }

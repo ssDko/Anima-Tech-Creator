@@ -738,42 +738,47 @@ namespace Anima_Tech_Creator
         //Optional Characteristics
         private void numUDStrength_ValueChanged(object sender, EventArgs e)
         {
-            currentEffect.OptionalStrCost = Convert.ToInt32(numUDStrength.Value);
+            currentEffect.OptionalStatCosts[Characteristic.Strength] = 
+                Convert.ToInt32(numUDStrength.Value);
         }
 
         private void numUDAgility_ValueChanged(object sender, EventArgs e)
         {
-            currentEffect.OptionalAgiCost = Convert.ToInt32(numUDAgility.Value);
+            currentEffect.OptionalStatCosts[Characteristic.Agility]
+                = Convert.ToInt32(numUDAgility.Value);
         }
 
         private void numUDDexterity_ValueChanged(object sender, EventArgs e)
         {
-            currentEffect.OptionalDexCost = Convert.ToInt32(numUDDexterity.Value);
+            currentEffect.OptionalStatCosts[Characteristic.Dexterity]
+                = Convert.ToInt32(numUDDexterity.Value);
         }
 
         private void numUDConstitution_ValueChanged(object sender, EventArgs e)
         {
-            currentEffect.OptionalConCost = Convert.ToInt32(numUDConstitution.Value);
+            currentEffect.OptionalStatCosts[Characteristic.Constitution]
+                = Convert.ToInt32(numUDConstitution.Value);
         }
 
         private void numUDWillPower_ValueChanged(object sender, EventArgs e)
         {
-            currentEffect.OptionalWPCost = Convert.ToInt32(numUDWillPower.Value);
+            currentEffect.OptionalStatCosts[Characteristic.WillPower]
+                = Convert.ToInt32(numUDWillPower.Value);
         }
 
         private void numUDPower_ValueChanged(object sender, EventArgs e)
         {
-            currentEffect.OptionalPowCost = Convert.ToInt32(numUDPower.Value);
+            currentEffect.OptionalStatCosts[Characteristic.Power] = Convert.ToInt32(numUDPower.Value);
         }
 
         private void UpdateOptionalCharacteristics()
         {
-            numUDStrength.Value = currentEffect.OptionalStrCost;
-            numUDAgility.Value = currentEffect.OptionalAgiCost;
-            numUDConstitution.Value = currentEffect.OptionalConCost;
-            numUDDexterity.Value = currentEffect.OptionalDexCost;
-            numUDWillPower.Value = currentEffect.OptionalWPCost;
-            numUDPower.Value = currentEffect.OptionalPowCost;
+            numUDStrength.Value = currentEffect.OptionalStatCosts[Characteristic.Strength];
+            numUDAgility.Value = currentEffect.OptionalStatCosts[Characteristic.Agility];
+            numUDConstitution.Value = currentEffect.OptionalStatCosts[Characteristic.Constitution];
+            numUDDexterity.Value = currentEffect.OptionalStatCosts[Characteristic.Dexterity];
+            numUDWillPower.Value = currentEffect.OptionalStatCosts[Characteristic.WillPower];
+            numUDPower.Value = currentEffect.OptionalStatCosts[Characteristic.Power];
         }
 
         private void Effect_Creator_FormClosing(object sender, FormClosingEventArgs e)
