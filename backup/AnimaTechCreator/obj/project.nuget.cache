@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "IylJiwFSFFsz38xbNWPkjnSif/E3x1znOpyt8+xSx9nKc5bmcFgHQ5dqCMlbBjTHRiHxaumEGQymWil+UR69FQ==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\AnimaTechCreator\\backup\\AnimaTechCreator\\AnimaTechCreator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jesse\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "C:\\Users\\Jesse\\.nuget\\packages\\extended.wpf.toolkit\\4.5.1\\extended.wpf.toolkit.4.5.1.nupkg.sha512",
+    "C:\\Users\\Jesse\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0-rc.2.23479.6\\microsoft.bcl.asyncinterfaces.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\Jesse\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Jesse\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0-rc.2.23479.6\\microsoft.extensions.dependencyinjection.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\Jesse\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-rc.2.23479.6\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\Jesse\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

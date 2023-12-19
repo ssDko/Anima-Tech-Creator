@@ -1,0 +1,17 @@
+﻿using System.Collections.Generic;
+
+namespace AnimaTechCreator.Common
+{
+    static class Levels
+    {
+        private static readonly List<LevelData> levels = new List<LevelData>
+        {
+                new LevelData(20, 50, 1),
+                new LevelData(40, 100, 2),
+                new LevelData(60, 200, 3)
+        };
+
+        public static LevelData GetLevelData(int index) => levels[index];
+        public static LevelData GetLevelData(Enums.Level level) => levels[(int)level];
+    }
+}

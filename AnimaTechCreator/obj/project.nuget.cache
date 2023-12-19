@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "17QbaLWMef2L9Uzcpm+7BjMYM0qOq4pzAIZGElFHf/bQb2byTnOpEtilxuDhAqi3Bpv1NFoQMclxSxfSYIA/uw==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\AnimaTechCreator\\AnimaTechCreator\\AnimaTechCreator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jesse\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "C:\\Users\\Jesse\\.nuget\\packages\\handycontrols\\3.4.5\\handycontrols.3.4.5.nupkg.sha512"
+  ],
+  "logs": []
+}

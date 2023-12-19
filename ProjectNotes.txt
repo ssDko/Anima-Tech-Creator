@@ -1,0 +1,15 @@
+AnimaTechCreator
+----------------------------
+The goal is to have a UI application that simplefies creating a "Technique" from the TTRPG (Table Top Role Playing Game) Anima Beyond Fantasy.
+UI elements will also be established that allow the user to add and modify any "Effects" a Technique is allowed to use.  Data will be stored in 
+flat files. 
+
+Language: C#/.Net (Core) 8
+Project built in: Visual Studio 2022
+
+State of Project: 
+There are effectively two projects in this archive. 
+-The main project (/AnimaTechCreator.sln): This project currnetly has some of the sub UserControls in development that will be used in the main application.
+
+-The previous project (/backup/AnimaTechCreator.sln): This project has the most current design for what the main application will look like. The UI elements here 
+ are meant to eventually be ported into the main project, with modification, to fit in with the new projects better style/orginization. 

@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="AnimaTechCreator.ViewModels.UserControls.DisadvantageControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AnimaTechCreator.ViewModels.UserControls"
+             mc:Ignorable="d" Height="20" Width="572">
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+            <ColumnDefinition Width="0.4*"></ColumnDefinition>
+            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+            <ColumnDefinition Width="0.05*"></ColumnDefinition>
+            <ColumnDefinition Width="0.15*"></ColumnDefinition>
+            <ColumnDefinition Width="0.05*"></ColumnDefinition>
+            <ColumnDefinition Width="0.15*"></ColumnDefinition>
+            <ColumnDefinition Width="0.13*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" FontWeight="Bold">Effect:</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" IsReadOnly="True">A very bad thing</TextBox>
+        <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" FontWeight="Bold">Mk Reduction:</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="3" IsReadOnly="True">0</TextBox>
+        <TextBlock Grid.Row="0" Grid.Column="4" HorizontalAlignment="Right" FontWeight="Bold">Min Level:</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="5" IsReadOnly="True">1</TextBox>
+        <TextBlock Grid.Row="0" Grid.Column="6" HorizontalAlignment="Right" FontWeight="Bold">Action Type:</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="7" IsReadOnly="True">Action</TextBox>
+
+
+    </Grid>
+</UserControl>

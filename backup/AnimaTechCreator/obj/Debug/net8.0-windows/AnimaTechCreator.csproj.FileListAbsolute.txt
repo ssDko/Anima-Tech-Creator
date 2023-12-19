@@ -1,0 +1,8 @@
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\AnimaTechCreator.csproj.AssemblyReference.cache
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\MainWindow.g.cs
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\Temp.g.cs
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\ViewModels\UserControls\DisadvantageControl.g.cs
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\App.g.cs
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\AnimaTechCreator_MarkupCompile.cache
+E:\Projects\AnimaTechCreator\AnimaTechCreator\obj\Debug\net8.0-windows\AnimaTechCreator_MarkupCompile.lref
