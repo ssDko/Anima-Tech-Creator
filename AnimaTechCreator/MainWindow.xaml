@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnimaTechCreator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="900
+        " Width="800">
     <Grid x:Name="TestGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>

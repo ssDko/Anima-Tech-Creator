@@ -56,14 +56,22 @@ namespace AnimaTechCreator.Views.UserControls
         }
         
         private void UpdateKiCostsGrid()
-        {   
-            RowDefinition headerRow = new RowDefinition();
-            RowDefinition dataRow = new RowDefinition();
-
-            KiCostGrid.RowDefinitions.Add(headerRow);
-            KiCostGrid.RowDefinitions.Add(dataRow);
-
+        {
             if (viewModel is null || viewModel.SelectedView is null) return;
+
+            KiCostGrid.ColumnDefinitions.Clear();
+            KiCostGrid.Children.Clear();
+
+            // First setup
+            if (KiCostGrid.RowDefinitions.Count != 2)
+            {
+                RowDefinition costHeadersRow = new RowDefinition();
+                RowDefinition dataRow = new RowDefinition();
+
+
+                KiCostGrid.RowDefinitions.Add(costHeadersRow);
+                KiCostGrid.RowDefinitions.Add(dataRow);
+            }
 
 
             for (int i = 0; i < viewModel.SelectedView.OptionalCharacteristics.Count + 1; i++)
@@ -74,6 +82,8 @@ namespace AnimaTechCreator.Views.UserControls
 
         private void CreateKiCostColumn(int index)
         {
+            const int HEADER_ROW = 0;
+            const int DATA_ROW = 1;
             if (viewModel is null || viewModel.SelectedView is null) return;
 
             bool isPrimary = index == 0;
@@ -106,7 +116,7 @@ namespace AnimaTechCreator.Views.UserControls
             header.FontWeight = FontWeights.Bold;
 
             Grid.SetColumn(header, gridIndex);
-            Grid.SetRow(header, 0);
+            Grid.SetRow(header, HEADER_ROW);
             Grid.SetColumnSpan(header, 2);
 
             KiCostGrid.Children.Add(header);
@@ -126,7 +136,7 @@ namespace AnimaTechCreator.Views.UserControls
                 numericUpDown.SetBinding(NumericUpDown.ValueProperty, numUpDownBinding);
                 numericUpDown.ValueChanged += OnKiCostNumericChanged;
                 Grid.SetColumn(numericUpDown, gridIndex);
-                Grid.SetRow(numericUpDown, 1);
+                Grid.SetRow(numericUpDown, DATA_ROW);
 
                 KiCostGrid.Children.Add(numericUpDown);
             }
@@ -145,16 +155,12 @@ namespace AnimaTechCreator.Views.UserControls
 
             display.SetBinding(TextBlock.TextProperty, textBinding);
 
-            Grid.SetColumn(display, (isPrimary ? gridIndex : gridIndex +1));
-            Grid.SetRow(display, 1);
+            Grid.SetColumn(display, (isPrimary ? gridIndex : gridIndex + 1));
+            Grid.SetRow(display, DATA_ROW);
 
             if (isPrimary) Grid.SetColumnSpan(display, 2);
-            
-
 
             KiCostGrid.Children.Add(display);
-
-            
         }
 
         private void OnKiCostNumericChanged(object? sender, HandyControl.Data.FunctionEventArgs<double> e)

@@ -15,7 +15,8 @@ namespace AnimaTechCreator.ViewModels
         private ObservableCollection<EffectViewModel> selectedViewCollection = new ObservableCollection<EffectViewModel>();
 
         partial void OnSelectedViewChanged(EffectViewModel? value)
-        {            
+        {
+            Debug.WriteLine("here");
             SelectedViewChanged?.Invoke();
         }
 
